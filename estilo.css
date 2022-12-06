@@ -1,0 +1,32 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(20, 206, 45), rgb(253, 255, 254));
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(189, 200, 200);
+}
+
+.principal__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.principal__tabela {
+    border: 3px solid #000000;
+    margin: 1rem;
+}
+
+.cab-tabela, .cont-tabela {
+    border: .5px solid #000000;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    text-align: center;
+}
