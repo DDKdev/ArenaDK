@@ -1,25 +1,34 @@
-let times = document.querySelectorAll(".times");
+let botao = document.querySelector(".cadastrarTimes");
+botao.addEventListener("click", () => {
+    let times = document.querySelectorAll("#time");
+    let infoNome = document.querySelectorAll(".info-nome");
+    let listaTimes =[];
+       
+    for(let i=0;i<times.length;i++){
+        infoNome[i].textContent = times[i].value;
+        listaTimes.push(times[i].value);
+    }
+    
+    let pTimes = document.querySelectorAll(".posicao");
 
-for(let i=0; i<times.length;i++){
-    let time = times[i];
+    for(let i =0;i<pTimes.length;i++){
+        if(pTimes[i].textContent == "TIME 1"){
+            pTimes[i].textContent = listaTimes[0];
+        }
+        if(pTimes[i].textContent == "TIME 2"){
+            pTimes[i].textContent = listaTimes[1];
+        }
+        if(pTimes[i].textContent == "TIME 3"){
+            pTimes[i].textContent = listaTimes[2];
+        }
+        if(pTimes[i].textContent == "TIME 4"){
+            pTimes[i].textContent = listaTimes[3];
+        }
+    }
+    
+    
 
-    let tdVitorias = time.querySelector(".info-vitorias");
-    let vitorias = tdVitorias.textContent;
+})
 
-    let tdDerrotas = time.querySelector(".info-derrotas");
-    let derrotas = tdDerrotas.textContent;
 
-    let tdEmpates = time.querySelector(".info-empates");
-    let empates = tdEmpates.textContent;
 
-    let totalPontos = somaPontos(vitorias,empates);
-
-    let tdPontuacao = time.querySelector(".info-pontos");
-    tdPontuacao.textContent = totalPontos;
-}
-
-function somaPontos (vitorias,empates){
-    let totalPontos = vitorias*3 + empates*1;
-
-    return totalPontos;
-}

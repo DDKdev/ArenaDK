@@ -18,6 +18,22 @@
     <main class="principal principal-bg">
         <h2 class="principal__titulo">Tabela de classificação</h2>
 
+        <section class="times-input">
+            <label for="time">Digite o nome do PRIMEIRO time:</label>
+            <input type="text" id="time">
+
+            <label for="time">Digite o nome do SEGUNDO time:</label>
+            <input type="text" id="time">
+
+            <label for="time">Digite o nome do TERCEIRO time:</label>
+            <input type="text" id="time">
+
+            <label for="time">Digite o nome do QUARTO time:</label>
+            <input type="text" id="time">
+           
+            <button type="submit" class="cadastrarTimes">Cadastrar</button>
+        </section>
+
         <table class="principal__tabela">
             <thead>
                 <tr>
@@ -28,41 +44,94 @@
                     <th class="cab-tabela">Pontos</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tabela__times">
                 <tr class="times">
-                    <td class="cont-tabela">Palmeiras</td>
-                    <td class="cont-tabela info-vitorias">3</td>
-                    <td class="cont-tabela info-derrotas">0</td>
-                    <td class="cont-tabela info-empates">0</td>
+                    <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-vitorias"></td>
+                    <td class="cont-tabela info-derrotas"></td>
+                    <td class="cont-tabela info-empates"></td>
                     <td class="cont-tabela info-pontos"></td>
                 </tr>
 
                 <tr class="times">
-                    <td class="cont-tabela">Santos</td>
-                    <td class="cont-tabela info-vitorias">2</td>
-                    <td class="cont-tabela info-derrotas">1</td>
-                    <td class="cont-tabela info-empates">0</td>
+                    <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-vitorias"></td>
+                    <td class="cont-tabela info-derrotas"></td>
+                    <td class="cont-tabela info-empates"></td>
                     <td class="cont-tabela info-pontos"></td>
                 </tr>
 
                 <tr class="times">
-                    <td class="cont-tabela">Corinthians</td>
-                    <td class="cont-tabela info-vitorias">0</td>
-                    <td class="cont-tabela info-derrotas">3</td>
-                    <td class="cont-tabela info-empates">0</td>
-                    <td class="cont-tabela info-pontos">0</td>
+                    <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-vitorias"></td>
+                    <td class="cont-tabela info-derrotas"></td>
+                    <td class="cont-tabela info-empates"></td>
+                    <td class="cont-tabela info-pontos"></td>
                 </tr>
 
-                <tr class="times" >
-                    <td class="cont-tabela">São Paulo</td>
-                    <td class="cont-tabela info-vitorias">1</td>
-                    <td class="cont-tabela info-derrotas">2</td>
-                    <td class="cont-tabela info-empates">0</td>
-                    <td class="cont-tabela info-pontos">0</td>
+                <tr class="times">
+                    <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-vitorias"></td>
+                    <td class="cont-tabela info-derrotas"></td>
+                    <td class="cont-tabela info-empates"></td>
+                    <td class="cont-tabela info-pontos"></td>
                 </tr>
             </tbody>
-            
         </table>
+
+        <section class="partidas">
+            <h2 class="titulo__partidas">RODADA 1</h2>
+            <div class="jogos-rodada">
+                <label for="time1" class="posicao">TIME 1</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time2" class="posicao">TIME 2</label>
+            </div>
+            <div class="jogos-rodada">
+                <label for="time3" class="posicao">TIME 3</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time4" class="posicao">TIME 4</label>
+            </div>
+
+            <h2 class="titulo__partidas">RODADA 2</h2>
+            <div class="jogos-rodada">
+                <label for="time1" class="posicao">TIME 1</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time2" class="posicao">TIME 3</label>
+            </div>
+            <div class="jogos-rodada">
+                <label for="time3" class="posicao">TIME 2</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time4" class="posicao">TIME 4</label>
+            </div>
+
+            <h2 class="titulo__partidas">RODADA 3</h2>
+            <div class="jogos-rodada">
+                <label for="time1" class="posicao">TIME 1</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time2" class="posicao">TIME 4</label>
+            </div>
+            <div class="jogos-rodada">
+                <label for="time3" class="posicao">TIME 3</label>
+                <input type="text">
+                X
+                <input type="text">
+                <label for="time4" class="posicao">TIME 2</label>
+            </div>
+
+            
+
+        </section>
+
     </main>
 
     <script src="./script.js"></script>
