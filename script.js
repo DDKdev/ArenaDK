@@ -25,10 +25,9 @@ botao.addEventListener("click", () => {
             pTimes[i].textContent = listaTimes[3];
         }
     }
-    
-    
-
 })
+
+
 
 
 

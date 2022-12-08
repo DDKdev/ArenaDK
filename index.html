@@ -38,6 +38,7 @@
             <thead>
                 <tr>
                     <th class="cab-tabela">Time</th>
+                    <th class="cab-tabela">Jogos</th>
                     <th class="cab-tabela">vitórias</th>
                     <th class="cab-tabela">derrotas</th>
                     <th class="cab-tabela">empates</th>
@@ -47,6 +48,7 @@
             <tbody class="tabela__times">
                 <tr class="times">
                     <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-jogos"></td>
                     <td class="cont-tabela info-vitorias"></td>
                     <td class="cont-tabela info-derrotas"></td>
                     <td class="cont-tabela info-empates"></td>
@@ -55,6 +57,7 @@
 
                 <tr class="times">
                     <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-jogos"></td>
                     <td class="cont-tabela info-vitorias"></td>
                     <td class="cont-tabela info-derrotas"></td>
                     <td class="cont-tabela info-empates"></td>
@@ -63,6 +66,7 @@
 
                 <tr class="times">
                     <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-jogos"></td>
                     <td class="cont-tabela info-vitorias"></td>
                     <td class="cont-tabela info-derrotas"></td>
                     <td class="cont-tabela info-empates"></td>
@@ -71,6 +75,7 @@
 
                 <tr class="times">
                     <td class="cont-tabela info-nome"></td>
+                    <td class="cont-tabela info-jogos"></td>
                     <td class="cont-tabela info-vitorias"></td>
                     <td class="cont-tabela info-derrotas"></td>
                     <td class="cont-tabela info-empates"></td>
@@ -81,59 +86,61 @@
 
         <section class="partidas">
             <h2 class="titulo__partidas">RODADA 1</h2>
-            <div class="jogos-rodada">
-                <label for="time1" class="posicao">TIME 1</label>
-                <input type="text">
+            <div class="jogos-rodada jogo1">
+                <label class="posicao">TIME 1</label>
+                <input type="text" class="time1-input">
                 X
-                <input type="text">
-                <label for="time2" class="posicao">TIME 2</label>
+                <input type="text" class="time2-input">
+                <label class="posicao">TIME 2</label>
             </div>
-            <div class="jogos-rodada">
-                <label for="time3" class="posicao">TIME 3</label>
-                <input type="text">
+            
+            <div class="jogos-rodada jogo2">
+                <label class="posicao">TIME 3</label>
+                <input type="text" class="time3-input">
                 X
-                <input type="text">
-                <label for="time4" class="posicao">TIME 4</label>
+                <input type="text" class="time4-input">
+                <label class="posicao">TIME 4</label>
             </div>
 
             <h2 class="titulo__partidas">RODADA 2</h2>
-            <div class="jogos-rodada">
-                <label for="time1" class="posicao">TIME 1</label>
-                <input type="text">
+            <div class="jogos-rodada jogo3">
+                <label class="posicao">TIME 1</label>
+                <input type="text" class="time1-input">
                 X
-                <input type="text">
-                <label for="time2" class="posicao">TIME 3</label>
+                <input type="text" class="time3-input">
+                <label class="posicao">TIME 3</label>
             </div>
-            <div class="jogos-rodada">
-                <label for="time3" class="posicao">TIME 2</label>
-                <input type="text">
+            <div class="jogos-rodada jogo4">
+                <label class="posicao">TIME 2</label>
+                <input type="text" class="time2-input">
                 X
-                <input type="text">
-                <label for="time4" class="posicao">TIME 4</label>
+                <input type="text" class="time4-input">
+                <label class="posicao">TIME 4</label>
             </div>
 
             <h2 class="titulo__partidas">RODADA 3</h2>
-            <div class="jogos-rodada">
-                <label for="time1" class="posicao">TIME 1</label>
-                <input type="text">
+            <div class="jogos-rodada jogo5">
+                <label class="posicao">TIME 1</label>
+                <input type="text" class="time1-input">
                 X
-                <input type="text">
-                <label for="time2" class="posicao">TIME 4</label>
+                <input type="text" class="time4-input">
+                <label class="posicao">TIME 4</label>
             </div>
-            <div class="jogos-rodada">
-                <label for="time3" class="posicao">TIME 3</label>
-                <input type="text">
+            <div class="jogos-rodada jogo6">
+                <label class="posicao">TIME 3</label>
+                <input type="text" class="time3-input">
                 X
-                <input type="text">
-                <label for="time4" class="posicao">TIME 2</label>
+                <input type="text" class="time2-input">
+                <label class="posicao">TIME 2</label>
             </div>
 
-            
+            <button type="submit" class="botao__resultado">Enviar resultados</button>
 
         </section>
 
     </main>
 
     <script src="./script.js"></script>
+    <script src="./resultados.js"></script>
 </body>
 </html>
