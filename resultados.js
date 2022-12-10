@@ -41,10 +41,14 @@ botaoResultado.addEventListener("click", () => {
     let tdVitorias = document.querySelectorAll(".info-vitorias");
     let tdDerrotas = document.querySelectorAll(".info-derrotas");
     let tdEmpates = document.querySelectorAll(".info-empates");
+    let tdJogos = document.querySelectorAll(".info-jogos");
+    let tdPontos = document.querySelectorAll(".info-pontos");
 
     let vitorias = [0,0,0,0];
     let derrotas = [0,0,0,0];
     let empates = [0,0,0,0];
+    let jogos = [0,0,0,0];
+    let pontos = [0,0,0,0];
 
     // JOGO 1
     if(golsTime1[0] > golsTime2[0]){
@@ -58,7 +62,16 @@ botaoResultado.addEventListener("click", () => {
         tdDerrotas[1].textContent = derrotas[1];
         tdEmpates[1].textContent = empates[1];
 
+        jogos[0] += 1;
+        jogos[1] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[1].textContent = jogos[1];
+
+        pontos[0] += 3;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[1].textContent = pontos[1];
     }
+
     if(golsTime2[0] > golsTime1[0]){
         vitorias[1] += 1;
         tdVitorias[1].textContent = vitorias[1];
@@ -69,6 +82,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[0].textContent = vitorias[0];
         tdDerrotas[0].textContent = derrotas[0];
         tdEmpates[0].textContent = empates[0];
+
+        jogos[0] += 1;
+        jogos[1] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[1].textContent = jogos[1];
+
+        pontos[1] += 3;
+        tdPontos[1].textContent = pontos[1];
+        tdPontos[0].textContent = pontos[0];
     }
 
     if(golsTime1[0] == golsTime2[0]){
@@ -81,6 +103,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[1].textContent = empates[1];
         tdVitorias[1].textContent = vitorias[1];
         tdDerrotas[1].textContent = derrotas[1];
+
+        jogos[0] += 1;
+        jogos[1] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[1].textContent = jogos[1];
+
+        pontos[0] += 1;
+        pontos[1] += 1;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[1].textContent = pontos[1];
     }
 
     //JOGO 2
@@ -95,6 +127,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
         tdEmpates[3].textContent = empates[3];
+
+        jogos[2] += 1;
+        jogos[3] += 1;
+        tdJogos[2].textContent = jogos[2];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[2] += 3;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[3].textContent = pontos[3];
     }
 
     if(golsTime4[0] > golsTime3[0]){
@@ -107,6 +148,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[2].textContent = vitorias[2];
         tdDerrotas[2].textContent = derrotas[2];
         tdEmpates[2].textContent = empates[2];
+
+        jogos[2] += 1;
+        jogos[3] += 1;
+        tdJogos[2].textContent = jogos[2];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[3] += 3;
+        tdPontos[3].textContent = pontos[3];
+        tdPontos[2].textContent = pontos[2];
     }
 
     if(golsTime3[0] == golsTime4[0]){
@@ -119,6 +169,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[3].textContent = empates[3];
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
+
+        jogos[2] += 1;
+        jogos[3] += 1;
+        tdJogos[2].textContent = jogos[2];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[2] += 1;
+        pontos[3] += 1;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[3].textContent = pontos[3];
     }
 
     //JOGO 3 - Rodada 2
@@ -132,6 +192,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[2].textContent = vitorias[2];
         tdDerrotas[2].textContent = derrotas[2];
         tdEmpates[2].textContent = empates[2];
+
+        jogos[0] += 1;
+        jogos[2] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[0] += 3;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[2].textContent = pontos[2];
     }
 
     if(golsTime3[1] > golsTime1[1]){
@@ -144,6 +213,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[0].textContent = vitorias[0];
         tdDerrotas[0].textContent = derrotas[0];
         tdEmpates[0].textContent = empates[0];
+
+        jogos[0] += 1;
+        jogos[2] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[2] += 3;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[0].textContent = pontos[0];
     }
 
     if(golsTime3[1] == golsTime1[1]){
@@ -156,6 +234,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[0].textContent = empates[0];
         tdVitorias[0].textContent = vitorias[0];
         tdDerrotas[0].textContent = derrotas[0];
+
+        jogos[0] += 1;
+        jogos[2] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[2] += 1;
+        pontos[0] += 1;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[0].textContent = pontos[0];
     }
     
     //JOGO 4
@@ -170,6 +258,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
         tdEmpates[3].textContent = empates[3];
+
+        jogos[1] += 1;
+        jogos[3] += 1;
+        tdJogos[1].textContent = jogos[1];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[1] += 3;
+        tdPontos[1].textContent = pontos[1];
+        tdPontos[3].textContent = pontos[3];
     }
 
     if(golsTime4[1] > golsTime2[1]){
@@ -182,6 +279,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[1].textContent = vitorias[1];
         tdDerrotas[1].textContent = derrotas[1];
         tdEmpates[1].textContent = empates[1];
+
+        jogos[3] += 1;
+        jogos[1] += 1;
+        tdJogos[3].textContent = jogos[3];
+        tdJogos[1].textContent = jogos[1];
+
+        pontos[3] += 3;
+        tdPontos[3].textContent = pontos[3];
+        tdPontos[1].textContent = pontos[1];
     }
 
     if(golsTime2[1] == golsTime4[1]){
@@ -194,6 +300,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[3].textContent = empates[3];
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
+
+        jogos[3] += 1;
+        jogos[1] += 1;
+        tdJogos[3].textContent = jogos[3];
+        tdJogos[1].textContent = jogos[1];
+
+        pontos[3] += 1;
+        pontos[1] += 1;
+        tdPontos[3].textContent = pontos[3];
+        tdPontos[1].textContent = pontos[1];
     }
 
     //JOGO 5
@@ -207,6 +323,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
         tdEmpates[3].textContent = empates[3];
+
+        jogos[0] += 1;
+        jogos[3] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[0] += 3;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[3].textContent = pontos[3];
     }
 
     if(golsTime4[2] > golsTime1[2]){
@@ -219,6 +344,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[0].textContent = vitorias[0];
         tdDerrotas[0].textContent = derrotas[0];
         tdEmpates[0].textContent = empates[0];
+
+        jogos[0] += 1;
+        jogos[3] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[0] += 3;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[3].textContent = pontos[3];
     }
 
     if(golsTime1[2] == golsTime4[2]){
@@ -231,6 +365,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[3].textContent = empates[3];
         tdVitorias[3].textContent = vitorias[3];
         tdDerrotas[3].textContent = derrotas[3];
+
+        jogos[0] += 1;
+        jogos[3] += 1;
+        tdJogos[0].textContent = jogos[0];
+        tdJogos[3].textContent = jogos[3];
+
+        pontos[0] += 1;
+        pontos[3] += 1;
+        tdPontos[0].textContent = pontos[0];
+        tdPontos[3].textContent = pontos[3];
     }
 
     //JOGO 6
@@ -244,6 +388,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[1].textContent = vitorias[1];
         tdDerrotas[1].textContent = derrotas[1];
         tdEmpates[1].textContent = empates[1];
+
+        jogos[1] += 1;
+        jogos[2] += 1;
+        tdJogos[1].textContent = jogos[1];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[2] += 3;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[1].textContent = pontos[1];
     }
 
     if(golsTime2[2] > golsTime3[2]){
@@ -256,6 +409,15 @@ botaoResultado.addEventListener("click", () => {
         tdVitorias[2].textContent = vitorias[2];
         tdDerrotas[2].textContent = derrotas[2];
         tdEmpates[2].textContent = empates[2];
+
+        jogos[1] += 1;
+        jogos[2] += 1;
+        tdJogos[1].textContent = jogos[1];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[1] += 3;
+        tdPontos[1].textContent = pontos[1];
+        tdPontos[2].textContent = pontos[2];
     }
     
     if(golsTime3[2] == golsTime2[2]){
@@ -268,6 +430,16 @@ botaoResultado.addEventListener("click", () => {
         tdEmpates[1].textContent = empates[1];
         tdVitorias[1].textContent = vitorias[1];
         tdDerrotas[1].textContent = derrotas[1];
+
+        jogos[1] += 1;
+        jogos[2] += 1;
+        tdJogos[1].textContent = jogos[1];
+        tdJogos[2].textContent = jogos[2];
+
+        pontos[1] += 1;
+        pontos[2] += 1;
+        tdPontos[2].textContent = pontos[2];
+        tdPontos[1].textContent = pontos[1];
     }
 })
 

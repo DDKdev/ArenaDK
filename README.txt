@@ -11,4 +11,5 @@ Criar uma tabela de classificação de pontos dinâmica que leia o resultado e a
 - Adicionar contador de gols na tabela
 - calcular pontuação
 - reorganizar por pontuação a tabela.
+- ignorar placar vazio.
 
